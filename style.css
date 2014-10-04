@@ -10,6 +10,8 @@
 
 body {
   font-family: "Museo 700 Regular", helvetica, arial, sans-serif;
+  background-image: url('light_grey.png');
+  background-repeat: repeat;
 }
 
 #container {
