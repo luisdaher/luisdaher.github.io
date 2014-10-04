@@ -65,3 +65,14 @@ li a {
 .medium a { background-image: url(img/medium.png); }
 .email a { background-image: url(img/email.png); }
 .skype a { background-image: url(img/skype.png); }
+
+
+@media all and (max-width: 699px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }  
+}
