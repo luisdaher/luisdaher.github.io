@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Museo 700 Regular";
+  src: url("museo700.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Museo 700 Regular", helvetica, arial, sans-serif;
+}
+
+#container {
+  left: 50%;
+  height: 300px;
+  margin: -150px 0 0 -360px;
+  position: absolute;
+  top: 50%;
+  width: 720px;
+  text-align: center;
+}
+
+h1 {
+  color: #adadad;
+  font-size: 120px;
+}
+
+h2 {
+  color: #505050;
+  font-size: 20px;
+}
+
+h1, h2 {
+  text-shadow: 1px 2px #f0f0f0;
+}
+
+/*ul {
+  list-style: none;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-right: 10px;
+}
+
+li a {
+  background: transparent no-repeat;
+  display: block;
+  height: 16px;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 16px;
+}*/
+
+/*.rubygems a { background-image: url(images/rubygems.png); }*/
