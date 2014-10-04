@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Museo 700 Regular";
-  src: url("fonts/museo700.otf");
+  src: url("museo700.otf");
 }
 
 * {
@@ -10,7 +10,7 @@
 
 body {
   font-family: "Museo 700 Regular", helvetica, arial, sans-serif;
-  background-image: url('img/light_grey.png');
+  background-image: url('light_grey.png');
   background-repeat: repeat;
 }
 
@@ -38,10 +38,9 @@ h1, h2 {
   text-shadow: 1px 2px #f0f0f0;
 }
 
-ul {
+/*ul {
   list-style: none;
   margin-top: 20px;
-  margin-left:230px;
   overflow: hidden;
 }
 
@@ -53,15 +52,10 @@ li {
 li a {
   background: transparent no-repeat;
   display: block;
-  height: 32px;
+  height: 16px;
   overflow: hidden;
   text-indent: -9999px;
-  width: 32px;
-}
+  width: 16px;
+}*/
 
-.twitter a { background-image: url(img/twitter.png); }
-.github a { background-image: url(img/github.png); }
-.linkedin a { background-image: url(img/linkedin.png); }
-.medium a { background-image: url(img/medium.png); }
-.email a { background-image: url(img/email.png); }
-.skype a { background-image: url(img/skype.png); }
+/*.rubygems a { background-image: url(images/rubygems.png); }*/
