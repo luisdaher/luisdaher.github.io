@@ -1,50 +1,281 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta http-equiv="content-Type" content="text/html; charset=UTF-8">
-    <title>Luis Daher's Portfolio Page</title>
-    <link rel="stylesheet" href="/style.css" type="text/css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-    <script src="/js/konami.js"></script>
-    <script src="/js/app.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luís Daher | Founder, Technical Leader & Product Builder</title>
+    <meta
+      name="description"
+      content="Luís Daher is a Brazilian technical founder and game studio leader with 20+ years of experience across games, apps, AR/XR, chatbots, and cross-platform product development."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        var storageKey = "theme-preference";
+        var preferredTheme = "light";
+
+        try {
+          var storedTheme = localStorage.getItem(storageKey);
+          if (storedTheme === "light" || storedTheme === "dark") {
+            preferredTheme = storedTheme;
+          } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            preferredTheme = "dark";
+          }
+        } catch (error) {
+          if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            preferredTheme = "dark";
+          }
+        }
+
+        document.documentElement.setAttribute("data-theme", preferredTheme);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="container">
-      <h1>
-        Luis Daher
-      </h1>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-      <h2>
-        I'm an experienced Ruby/Java developer, <br />
-        a Certified Scrum Master and an Agile enthusiast <br />
-        looking forward to working on amazing projects.
-      </h2>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Luís Daher homepage">
+          <span class="brand-avatar">
+            <img src="./images/avatar.jpg" alt="Luís Daher avatar" width="36" height="36" loading="eager" />
+          </span>
+          LUIS DAHER
+        </a>
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <nav class="quick-links" aria-label="External links">
+            <a href="https://cavylabs.com/" target="_blank" rel="noreferrer">Cavylabs</a>
+            <a href="https://store.steampowered.com/app/1602030/MegaBattle/" target="_blank" rel="noreferrer">MegaBattle</a>
+            <a href="https://mentoriasgamesbr.ementor.com.br/mentor/luisdaher/" target="_blank" rel="noreferrer">Mentorias</a>
+          </nav>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">
+            Dark mode
+          </button>
+        </div>
+      </div>
+    </header>
 
-      <ul>
-        <li class="github">
-          <a title="Github" target="_blank" href="http://github.com/luisdaher">Github</a>
-        </li>
-        <li class="email">
-          <a title="E-mail" target="_blank" href="mailto:luisotaviodaher@gmail.com">E-mail</a>
-        </li>
-        <li class="skype">
-          <a title="Skype" target="_blank" href="skype:luis.daher">Skype</a>
-        </li>
-        <li class="twitter">
-          <a title="Twitter" target="_blank" href="http://twitter.com/luis_daher">Twitter</a>
-        </li>
-        <li class="linkedin">
-          <a title="Linkedin" target="_blank" href="http://br.linkedin.com/in/luisdaher/">Linkedin</a>
-        </li>        
-        <li class="medium">
-          <a title="Medium" target="_blank" href="http://medium.com/@luis_daher">Medium</a>
-        </li>
-      </ul>
-    </div>
-    <div id="dialog" title="You're Awesome!" style="display:none;">
-      <p><iframe width="420" height="315" src="http://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe></p>
-    </div>    
+    <main id="main">
+      <section class="hero section" id="home">
+      <!-- Favicons -->
+      <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="./images/favicon/site.webmanifest">
+      <link rel="shortcut icon" href="./images/favicon/favicon.ico">
+      <meta name="msapplication-TileColor" content="#f7f3ea">
+      <meta name="theme-color" content="#f7f3ea" media="(prefers-color-scheme: light)">
+      <meta name="theme-color" content="#151821" media="(prefers-color-scheme: dark)">
+      <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-chrome-192x192.png">
+      <link rel="icon" type="image/png" sizes="512x512" href="./images/favicon/android-chrome-512x512.png">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <h1>Founder, Technical Leader & Product Builder</h1>
+            <p class="hero-positioning">Technical founder and game industry leader building products, studios, and teams.</p>
+            <p class="hero-description">
+              I build and lead digital products across games, apps, AR/XR, chatbots, and cross-platform technology, combining hands-on engineering experience with studio leadership, business development, and community work.
+            </p>
+            <ul class="hero-metrics" aria-label="Key credibility highlights">
+              <li>
+                <strong>20+ years</strong>
+                <span>Technology, games, and product execution</span>
+              </li>
+              <li>
+                <strong>50+ projects</strong>
+                <span>Delivered through Cavylabs</span>
+              </li>
+              <li>
+                <strong>Since 2024</strong>
+                <span>Speaker and panelist at Gamescom Latam</span>
+              </li>
+            </ul>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#work">View Work</a>
+              <a class="btn btn-secondary" href="#contact">Contact</a>
+            </div>
+            <p class="credibility-line">
+              Co-founder at Cavylabs & MadCat | Mentor at Mentorias Games Brasil
+            </p>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="Profile collage">
+            <figure class="hero-main-image">
+              <img
+                src="./images/luis-profile.jpg"
+                data-fallback="Luís Daher profile photo"
+                alt="Portrait of Luís Daher"
+                fetchpriority="high"
+              />
+            </figure>
+            <!-- <figure class="hero-support-card support-top">
+              <img
+                src="./images/luis-panel.jpg"
+                data-fallback="Luís Daher speaking at a panel"
+                alt="Luís Daher speaking during a panel"
+              />
+            </figure>
+            <figure class="hero-support-card support-bottom">
+              <img
+                src="./images/megabattle-team.jpg"
+                data-fallback="MegaBattle team photo"
+                alt="Luís Daher with the MegaBattle team"
+              />
+            </figure>             -->
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-bar section-sm" aria-label="Credibility highlights">
+        <div class="container">
+          <div class="proof-grid" id="proof-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <h2 class="reveal">Technical background. Founder mindset. Industry presence.</h2>
+          <div class="about-copy reveal">
+            <p>
+              I'm a Brazilian founder, technical leader, and product builder with over 20 years of experience in software, games, apps, AR/XR, chatbots, and cross-platform development.
+            </p>
+            <p>
+              My career started hands-on, building digital products as a developer. That technical foundation later became the base for my work as co-founder and Studio Head at Cavylabs, where I lead teams, projects, partnerships, porting initiatives, and original IP development.
+            </p>
+            <p>
+              Before Cavylabs became my full-time focus, I spent years working across software, apps, games, mobile, and web projects, including global technical work connected to ITU/Toptal. During that period, I started building Cavylabs in parallel, gradually turning it from an independent initiative into a professional studio.
+            </p>
+            <p>
+              That transition shaped the way I lead today, with technical depth, respect for execution, and a practical understanding of what it takes to ship real products.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Products, studios, and technical delivery across platforms.</h2>
+          </div>
+
+          <div class="leadership-media reveal">
+            <figure>
+              <img
+                src="./images/gdc-rafael.jpg"
+                data-fallback="Panel speaking moment"
+                alt="Luís Daher speaking on stage during an industry panel"
+                loading="lazy"
+              />
+              <figcaption>Speaker and panelist at Gamescom Latam since 2024.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="./images/megabattle-team.jpg"
+                data-fallback="Mentorias Games Brasil group"
+                alt="Luís Daher with Mentorias Games Brasil participants"
+                loading="lazy"
+              />
+              <figcaption>Mentorship and ecosystem contribution through Mentorias Games Brasil.</figcaption>
+            </figure>
+          </div>          
+          <div class="work-grid" id="work-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="expertise">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Areas of Expertise</p>
+            <h2>Where technical execution meets leadership and product thinking.</h2>
+          </div>
+          <div class="expertise-grid" id="expertise-grid"></div>
+        </div>
+      </section>
+
+      <section class="section leadership" id="leadership">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Ecosystem & Leadership</p>
+            <h2>Industry presence beyond studio delivery.</h2>
+            <p>
+              Beyond studio work, I participate in initiatives that help strengthen the Brazilian games ecosystem, from public talks and panels to mentorship and founder support.
+            </p>
+          </div>
+
+          <div class="leadership-media reveal">
+            <figure>
+              <img
+                src="./images/luis-panel.jpg"
+                data-fallback="Panel speaking moment"
+                alt="Luís Daher speaking on stage during an industry panel"
+                loading="lazy"
+              />
+              <figcaption>Speaker and panelist at Gamescom Latam since 2024.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="./images/mentorias-games-brasil-2025.jpg"
+                data-fallback="Mentorias Games Brasil group"
+                alt="Luís Daher with Mentorias Games Brasil participants"
+                loading="lazy"
+              />
+              <figcaption>Mentorship and ecosystem contribution through Mentorias Games Brasil.</figcaption>
+            </figure>
+          </div>
+
+          <div class="leadership-grid" id="leadership-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="timeline">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Career Timeline</p>
+            <h2>From technical roots to studio and ecosystem leadership.</h2>
+          </div>
+          <ol class="timeline" id="timeline-list"></ol>
+        </div>
+      </section>
+
+      <!-- <section class="section philosophy">
+        <div class="container reveal">
+          <blockquote>
+            "My work sits between engineering, production, business, and creative development. I like building teams and products that can actually ship."
+          </blockquote>
+        </div>
+      </section> -->
+    </main>
+
+    <footer class="site-footer section" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's talk about games, porting, co-development, AR/XR, talks, mentorship, or product ideas.</h2>
+        </div>
+        <ul class="contact-list">
+          <li><a href="mailto:luis@cavylabs.com">luis@cavylabs.com</a></li>
+          <li><a href="https://br.linkedin.com/in/luisdaher" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="https://cavylabs.com/" target="_blank" rel="noreferrer">Cavylabs</a></li>
+          <li><a href="https://store.steampowered.com/app/1602030/MegaBattle/" target="_blank" rel="noreferrer">MegaBattle</a></li>
+          <li><a href="https://mentoriasgamesbr.ementor.com.br/mentor/luisdaher/" target="_blank" rel="noreferrer">Mentorias Games Brasil</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
